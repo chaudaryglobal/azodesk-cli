@@ -1,82 +1,85 @@
-# 🚀 AzoDesk: The Autonomous Terminal Engineering Agent
+# 🚀 AzoDesk: The Elite Autonomous AI Engineering Workspace
 
 <div align="center">
 
+```
+ █████╗ ███████╗ ██████╗ ██████╗ ███████╗███████╗██╗  ██╗
+██╔══██╗╚══███╔╝██╔═══██╗██╔══██╗██╔════╝██╔════╝██║ ██╔╝
+███████║  ███╔╝ ██║   ██║██║  ██║█████╗  ███████║█████╔╝ 
+██╔══██║ ███╔╝  ██║   ██║██║  ██║██╔══╝  ╚════██║██╔═██╗ 
+██║  ██║███████╗╚██████╔╝██████╔╝███████╗███████║██║  ██╗
+╚═╝  ╚═╝╚══════╝ ╚═════╝ ╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═╝
+```
+
+**"The most powerful, autonomous, and totally free AI workspace ever built for the terminal."**
+
 [![Version](https://img.shields.io/badge/Version-1.0.0-blue.svg?style=for-the-badge)](https://azodesk.com)
 [![Node](https://img.shields.io/badge/Node-%3E=20.0.0-green.svg?style=for-the-badge)](https://nodejs.org)
+[![Open Source](https://img.shields.io/badge/Open%20Source-Totally%20Free-brightgreen.svg?style=for-the-badge)](https://azodesk.com)
 [![License](https://img.shields.io/badge/License-MIT-purple.svg?style=for-the-badge)](https://github.com/chaudaryglobal/azodesk/blob/main/LICENSE)
 [![Website](https://img.shields.io/badge/Official-azodesk.com-orange.svg?style=for-the-badge)](https://azodesk.com)
-
-**Experience the future of development where the terminal isn't just a tool—it's your senior engineer partner.**
-
-[Overview](#-overview) • [The Autonomous Engine](#-the-autonomous-engine) • [Installation](#-installation) • [Configuration](#-configuration) • [Command Reference](#-command-reference) • [Internal Architecture](#-architecture) • [Support](#-support-the-developer)
 
 </div>
 
 ---
 
-## 🌟 Overview
+## 🌟 Introduction
 
-**AzoDesk** is the world's most advanced autonomous workspace for the terminal. It transforms standard shell environments into high-performance engineering cockpits. Unlike traditional AI assistants that merely "suggest" code, AzoDesk acts as an **Agentic Engine** that plans, executes, verifies, and self-heals your codebase in real-time.
+**AzoDesk** is a production-grade, **Open Source**, and **Totally Free** autonomous terminal workspace. It is the result of a vision to bridge the gap between static code editors and the intelligence of modern AI. AzoDesk transforms your terminal into a high-performance engineering cockpit where the AI doesn't just suggest—it **acts**.
 
-Built for developers who demand speed, security, and absolute reliability, AzoDesk leverages multiple high-reasoning models (DeepSeek-R1, GPT-4o, Llama 3.1) to navigate complex codebases, refactor architectures, and eliminate the friction of modern software development.
+By integrating over **100+ state-of-the-art AI models** from providers like **OpenRouter** and **NVIDIA**, AzoDesk provides a unified, high-speed interface for planning, coding, testing, and self-healing. It is built by developers, for developers who live in the terminal.
 
 ---
 
-## 🔥 The Autonomous Engine (Deep Dive)
+## 🧠 The Four Pillars of Autonomy
 
-AzoDesk is powered by a proprietary **Four-Pillar Autonomy Engine** that ensures every AI interaction is safe and successful.
+AzoDesk is powered by a proprietary autonomous engine that handles the lifecycle of software engineering.
 
 ### 1. 🔧 Self-Healing Execution Loop
-When a command fails—be it a missing dependency, a syntax error, or a permission issue—AzoDesk doesn't stop.
-- **Diagnostic Phase**: The `AutoFixService` immediately consumes the `stderr` and `stdout`.
-- **Reasoning Phase**: High-reasoning models (like DeepSeek-R1) analyze the failure context.
-- **Remediation Phase**: The system proposes a precise "Self-Heal" command (e.g., `npm install @types/node`).
-- **Confirmation**: With your approval (or in auto-mode), it applies the fix and re-runs the original task.
+The "Plan-Code-Test" loop is fully automated. When a terminal command or a build fails:
+- **Autonomous Diagnosis**: AzoDesk captures the `stderr` and uses high-reasoning models (like DeepSeek-R1) to diagnose the root cause.
+- **Remediation**: It analyzes missing packages, syntax errors, or environmental issues.
+- **Healing**: The system proposes a fix and, upon your confirmation, executes it immediately. It repeats this process recursively until the task is successfully completed.
 
-### 2. ⚡ Speculative Context Retrieval
-Traditional RAG is slow. AzoDesk implements a **Warm Context Buffer** that works ahead of you.
-- **Predictive Indexing**: As you type or while the AI is streaming, the system speculatively loads related files into memory.
-- **Latency Reduction**: This reduces the "Time-to-First-Token" by up to **40%**, making interaction feel instantaneous even on massive repositories.
+### 2. ⚡ Speculative Context Retrieval (Ultra-Fast RAG)
+Traditional Retrieval-Augmented Generation (RAG) often waits for the user to finish typing. AzoDesk's **Warm Context Buffer** works ahead:
+- **Predictive Prefetching**: While you type your prompt or while the AI streams, the system speculatively indexes and loads related files into a memory buffer.
+- **Reduced Latency**: This eliminates the wait time for context loading, reducing Time-to-First-Token by up to **40%**.
 
 ### 3. 🛡️ Atomic Snapshots & Zero-Risk Rollbacks
-Never fear a large refactor again.
-- **Micro-Snapshots**: Before every AI-suggested modification, AzoDesk creates a lightweight snapshot of the affected files.
-- **Instant Recovery**: If a command fails or you simply don't like the result, the `/rb` command triggers a **Zero-Latency Rollback**, restoring your codebase to its exact previous state.
+Autonomy should never come at the cost of stability.
+- **Pre-Change Snapshots**: AzoDesk creates a micro-snapshot of your codebase before every AI-suggested modification.
+- **Zero-Latency Rollback**: If an AI-driven refactor fails or introduces regressions, the `/rb` command restores your files to their exact previous state in milliseconds.
 
-### 4. 🔍 High-Integrity Verification Loop
-Code that "looks" right isn't enough. AzoDesk enforces **Structural Integrity**.
-- **Post-Change Verification**: After every modification, the system automatically runs `npx tsc --noEmit` or `npm run build`.
-- **Autonomous Repair**: If the verification fails (e.g., a type mismatch), the Self-Healing Loop is triggered automatically to fix the discrepancy.
+### 🔍 4. High-Integrity Verification
+AzoDesk ensures that the code it generates is not only logical but also valid and buildable.
+- **Structural Checks**: After every change, the system automatically runs `tsc --noEmit` and `npm run build`.
+- **Auto-Fix Integration**: If verification fails, the Self-Healing Loop is triggered to fix the type errors or build issues before you even see them.
 
 ---
 
-## 🛠️ Core Features
+## 🚀 Key Features
 
-- **Multi-Model Orchestration**: Seamlessly switch between OpenRouter, NVIDIA AI, and local providers.
-- **Skill Orchestration**: Semantic search and execution of specialized engineering skills (Docker, AWS, Performance Tuning).
-- **Intelligent Task Engine**: Automatically decomposes high-level prompts into actionable execution steps.
-- **Multi-Workspace Isolation**: Maintain separate AI contexts and histories for every project you work on.
-- **Secure Sandbox**: Advanced command analysis blocks dangerous operations (e.g., `rm -rf /`) before they happen.
-- **TUI Cockpit**: A premium, responsive Text User Interface with real-time status bars and streaming displays.
+- **100+ Models in One CLI**: Unified access to every major AI model via OpenRouter and NVIDIA.
+- **Command Palette (`Ctrl + P`)**: A professional visual interface for model switching, key configuration, and skill management.
+- **Autonomous Skill Orchestration**: Semantic search and execution of specialized skills (Docker, Performance, Security).
+- **Secure Sandbox**: Advanced command analysis blocks dangerous operations (e.g., `rm -rf /`) before they reach your shell.
+- **Smart File Tagging**: Use `@` to instantly attach specific files or directories to your AI context.
+- **Multi-Workspace Isolation**: Maintain separate context, history, and models for each of your projects.
+- **Premium TUI**: A responsive, 60fps terminal interface with real-time status bars and streaming displays.
 
 ---
 
 ## 📦 Installation
 
-AzoDesk-CLI is designed to be universal.
+AzoDesk-CLI is designed to be universal and lightweight.
 
-### 📦 npm / Bun / pnpm
+### 📦 npm (Recommended)
 ```bash
-# Global installation via npm
 npm i -g azodesk-cli
-
-# Fast installation via bun
-bun add -g azodesk-cli
 ```
 
 ### 🚀 Curl (The One-Liner)
-Ideal for CI/CD or fresh Linux installs:
 ```bash
 curl -fsSL https://azodesk.com/install.sh | sh
 ```
@@ -84,6 +87,11 @@ curl -fsSL https://azodesk.com/install.sh | sh
 ### 🍺 Homebrew (macOS)
 ```bash
 brew install azodesk/tap/azodesk-cli
+```
+
+### 🍞 Bun
+```bash
+bun add -g azodesk-cli
 ```
 
 ### 🐧 Arch Linux (paru/yay)
@@ -95,106 +103,94 @@ paru -S azodesk-cli
 
 ## 🔑 API Key Setup Guide
 
-AzoDesk is a multi-provider orchestrator. To begin, you will need an API key from at least one of the supported providers.
+To unlock the power of **100+ Free and Premium Models**, follow this guide.
 
-### 1️⃣ OpenRouter (Highly Recommended)
-OpenRouter provides a single interface for over 100+ models including GPT-4o, Claude 3.5, and DeepSeek.
+### 1️⃣ OpenRouter (Access 60+ Models)
+OpenRouter is the recommended provider for high-reasoning tasks.
+*   **Get Key**: [openrouter.ai/keys](https://openrouter.ai/keys)
+*   **Configure**: Open AzoDesk → Press `Ctrl + P` → `Configure API Keys` → `OpenRouter`.
+*   **Free Models**: Includes many free options like Llama 3, Mistral, and more.
 
-*   **Step 1**: Visit [openrouter.ai](https://openrouter.ai/keys).
-*   **Step 2**: Sign in or create an account.
-*   **Step 3**: Click on **"Create Key"** and give it a name (e.g., `AzoDesk-CLI`).
-*   **Step 4**: Copy the key and run:
-    ```bash
-    azodesk config set openrouter_key YOUR_KEY_HERE
-    ```
-
-### 2️⃣ NVIDIA AI Foundation (Best for Speed)
-NVIDIA offers high-speed access to open-weights models like Llama 3 and Mistral.
-
-*   **Step 1**: Go to the [NVIDIA API Catalog](https://build.nvidia.com/).
-*   **Step 2**: Select a model (e.g., `Meta Llama 3.1 70B`).
-*   **Step 3**: Click on **"Get API Key"**.
-*   **Step 4**: Copy the generated key and run:
-    ```bash
-    azodesk config set nvidia_key YOUR_KEY_HERE
-    ```
-
-### 3️⃣ Verifying Your Setup
-Once configured, you can verify your connection to the models:
-```bash
-# List available models and check status
-azodesk models list
-
-# Test a specific model
-azodesk models test openrouter/deepseek/deepseek-r1
-```
+### 2️⃣ NVIDIA AI Foundation (Ultra-Fast)
+Perfect for rapid code generation and low-latency responses.
+*   **Get Key**: [build.nvidia.com](https://build.nvidia.com/)
+*   **Configure**: Open AzoDesk → Press `Ctrl + P` → `Configure API Keys` → `NVIDIA`.
+*   **Direct Access**: Use high-speed NIM endpoints for Llama 3.1 and Mistral Large.
 
 ---
 
 ## ⌨️ Command Reference
 
-### 🚀 Global Commands
+### Interactive TUI Shortcuts
+| Shortcut | Action |
+| :--- | :--- |
+| **`Ctrl + P`** | Open the Command Palette (Everything in one place) |
+| **`Ctrl + K`** | Clear current chat context and history |
+| **`Ctrl + S`** | Create a manual Snapshot of the current directory |
+| **`Ctrl + Q`** | Show command help overlay |
+| **`Ctrl + C`** | Cancel current AI stream or clear input line |
+| **`Tab`** | Trigger command and file completion |
+| **`Esc`** | Close palette or clear input |
+
+### CLI Commands
 | Command | Usage |
 | :--- | :--- |
-| `azodesk` | Launch the Interactive TUI Cockpit |
-| `azodesk ai "<prompt>"` | Execute a specific task autonomously |
-| `azodesk chat` | Open a persistent chat session with the AI |
-| `azodesk workspace create <name>` | Initialize a new isolated workspace |
-| `azodesk models list` | See all available and tested models |
-| `azodesk config show` | View current settings and API status |
+| `azodesk` | Launch the interactive workspace (TUI) |
+| `azodesk ai "..."` | Run an autonomous goal directly from your shell |
+| `azodesk chat` | Open a persistent AI chat session |
+| `azodesk workspace create <name>` | Create a new isolated project context |
+| `azodesk workspace list` | View all saved workspaces |
+| `azodesk models list` | See all available models and provider status |
+| `azodesk config show` | View current settings (keys are redacted) |
 
-### 🧭 AI Modes (`/mode`)
-Fine-tune the AI's persona for your specific task:
-- **`architect`**: Focuses on high-level system design and patterns.
-- **`debugger`**: Specialized in stack trace analysis and error fixing.
-- **`optimizer`**: Identifies bottlenecks and refactors for performance.
-- **`reviewer`**: Performs security audits and code quality checks.
+### AI Personas (`/mode`)
+Switch the AI's specialty on the fly:
+- **`architect`**: High-level system design and software patterns.
+- **`debugger`**: Root-cause analysis and automated fixing.
+- **`optimizer`**: Performance tuning and code refactoring.
+- **`reviewer`**: Security audits and code quality reviews.
 - **`generator`**: Rapid scaffolding and boilerplate generation.
-
-### ⌨️ Interactive Shortcuts
-- **`Ctrl + P`**: Quick Model Selection & Config
-- **`Ctrl + S`**: Create a manual Snapshot
-- **`Ctrl + K`**: Clear context and history
-- **`Esc`**: Cancel the current AI generation or command
+- **`teacher`**: Deep explanations and learning-oriented guidance.
 
 ---
 
-## 🏗️ Internal Architecture
+## 🏗️ Architecture & Internals
 
-AzoDesk is built on a modular, event-driven architecture designed for extreme reliability.
+AzoDesk is built with a modular, scalable architecture using **Node.js 20+** and **TypeScript**.
 
 ```
 src/
-├── ai/            # AI Orchestration, Prompt Engineering & Auto-Fix
-├── cli/           # REPL, Handler Logic & TUI Entry Point
-├── executor/      # Command Execution, Sandbox & Safety Checks
-├── workspace/     # Persistence, Snapshots & Context Isolation
-├── knowledge/     # Vector Service, Skills & Warm Context Buffer
-├── task-engine/   # Task Decomposition & State Machines
-├── ui/            # Responsive TUI Components & Renderers
-└── security/      # Blocklists, Sanitization & Audit Logs
+├── ai/            # Orchestrator, Auto-Fix Service & Prompts
+├── cli/           # Handler Logic, REPL & TUI Core
+├── executor/      # Command Execution, Sandbox & Safety
+├── workspace/     # Persistence, Snapshots & Isolation
+├── knowledge/     # Vector Service, Skills & Warm Buffer
+├── task-engine/   # Plan Decomposition & Execution Logic
+├── ui/            # Ink/React Components & Renderers
+├── security/      # Blocklists & Privacy Scrubbing
+└── router/        # Model Selection & Fallback Logic
 ```
 
-- **Persistence**: Workspaces are stored as atomic JSON stores at `~/.azodesk/workspaces/`.
-- **Networking**: All AI communication is handled via the Provider Layer with automatic fallback and retry logic.
-- **Performance**: Heavy tasks like vector indexing are offloaded to Worker Threads to keep the UI at 60fps.
+- **Persistence Layer**: Data is stored atomically at `~/.azodesk/`.
+- **Vector Engine**: Uses local embeddings for semantic skill discovery.
+- **Isolation**: Each workspace has its own SQLite/JSON store for history and context.
 
 ---
 
 ## 🛡️ Security & Privacy
 
-Your security is our top priority.
-- **Sandbox Execution**: Commands are analyzed for high-risk patterns before execution.
-- **Privacy-First**: No code is ever stored or shared by AzoDesk. Your API keys are stored locally in an encrypted-at-rest configuration.
-- **Full Transparency**: Every autonomous action requires confirmation (unless you explicitly enable `autoConfirm`).
+AzoDesk is designed for professional environments where security is non-negotiable.
+- **Safety Sandbox**: Every command is analyzed for dangerous patterns (e.g., recursive deletes, system modifications) before execution.
+- **Privacy Scrubbing**: AI prompts are optionally scrubbed for sensitive data like tokens and secrets before being sent to providers.
+- **Full Transparency**: AzoDesk never performs a destructive action without your explicit confirmation (unless you choose to enable `autoConfirm`).
 
 ---
 
 ## 🤝 Support the Developer
 
-> **"Development is a relentless pursuit of the impossible. AzoDesk was born from a vision to make that pursuit effortless. If this tool has saved you hours of debugging or empowered your creativity, your support is the fuel that keeps this engine running."**
+> **"Development is a journey that thrives on community and passion. AzoDesk is my contribution to the global developer community—a tool that I built to be totally free and open for everyone. If AzoDesk has empowered your workflow, please consider supporting the project to help me keep it at the cutting edge."**
 
-Every donation helps me maintain the infrastructure, integrate new cutting-edge models, and keep AzoDesk open and accessible to developers worldwide.
+Your support helps me maintain the infrastructure, integrate new models, and continue building the future of autonomous engineering.
 
 ### 💰 Crypto Donations
 - **Bitcoin (BTC)**: `bc1qr5tdgwpp0lfsug3fddjmqlsyp3jgmurcsu4lmk`
@@ -213,10 +209,10 @@ Every donation helps me maintain the infrastructure, integrate new cutting-edge 
 **Lead Developer**: Ahmad Abdullah Chaudary  
 **Official Website**: [azodesk.com](https://azodesk.com)  
 **Support Email**: [chaudaryglobal@gmail.com](mailto:chaudaryglobal@gmail.com)  
-**Collaborations & Business**: [ahmadabdullahchaudary@gmail.com](mailto:ahmadabdullahchaudary@gmail.com)
+**Collaborations**: [ahmadabdullahchaudary@gmail.com](mailto:ahmadabdullahchaudary@gmail.com)
 
 ---
 
 <div align="center">
-Built with ❤️ by Ahmad Abdullah Chaudary.
+Built with ❤️ by Ahmad Abdullah Chaudary for the future of engineering.
 </div>
