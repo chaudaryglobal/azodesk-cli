@@ -2,7 +2,7 @@
 
 <div align="center">
 
-```
+```text
  █████╗ ███████╗ ██████╗ ██████╗ ███████╗███████╗██╗  ██╗
 ██╔══██╗╚══███╔╝██╔═══██╗██╔══██╗██╔════╝██╔════╝██║ ██╔╝
 ███████║  ███╔╝ ██║   ██║██║  ██║█████╗  ███████║█████╔╝ 
@@ -28,6 +28,54 @@
 **AzoDesk** is a production-grade, **Open Source**, and **Totally Free** autonomous terminal workspace. It is the result of a vision to bridge the gap between static code editors and the intelligence of modern AI. AzoDesk transforms your terminal into a high-performance engineering cockpit where the AI doesn't just suggest—it **acts**.
 
 By integrating over **100+ state-of-the-art AI models** from providers like **OpenRouter** and **NVIDIA**, AzoDesk provides a unified, high-speed interface for planning, coding, testing, and self-healing. It is built by developers, for developers who live in the terminal.
+
+---
+
+## 📺 Live Previews & Demos
+
+### 🔧 1. Autonomous Self-Healing
+Watch AzoDesk detect a build error and fix it without human intervention.
+
+```text
+❯ azodesk ai "build the project"
+⠋ Thinking...
+● Executing: npm run build
+✖ Error: Cannot find module '@types/node'
+⠋ Self-Healing Loop Triggered...
+🧠 Diagnosis: Missing TypeScript type definitions for Node.js.
+💡 Proposed Fix: npm install --save-dev @types/node
+✔ Applied fix successfully.
+● Re-executing: npm run build
+✔ Build Success!
+```
+
+### ⚡ 2. Speculative Context Loading
+RAG at the speed of thought. Files are loaded *before* you finish your prompt.
+
+```text
+❯ azodesk chat
+AzoDesk ❯ How does the auth log...
+[ Warm Context Buffer ]
+📂 Loaded: src/auth/service.ts (98% match)
+📂 Loaded: src/auth/types.ts (92% match)
+📂 Loaded: src/config/auth.config.ts (85% match)
+...Ready to answer instantly.
+```
+
+### ⌨️ 3. The Command Palette (`Ctrl + P`)
+A visual cockpit for the advanced engineer.
+
+```text
+  ⚡ AZODESK COMMAND PALETTE    ↑↓ Navigate  Enter Select  Esc Close
+
+  ▶ 🚀 Autonomous Task Solver (/solve)
+    🧠 Specialized Skills (Search & Browse)
+    🤖 AI Models (Search & Switch)
+    👤 Change Mode
+    📂 Index Workspace (RAG)
+    🔑 Configure API Keys
+    🛡️  Security & Sandbox Settings
+```
 
 ---
 
@@ -171,10 +219,6 @@ src/
 └── router/        # Model Selection & Fallback Logic
 ```
 
-- **Persistence Layer**: Data is stored atomically at `~/.azodesk/`.
-- **Vector Engine**: Uses local embeddings for semantic skill discovery.
-- **Isolation**: Each workspace has its own SQLite/JSON store for history and context.
-
 ---
 
 ## 🛡️ Security & Privacy
@@ -182,25 +226,27 @@ src/
 AzoDesk is designed for professional environments where security is non-negotiable.
 - **Safety Sandbox**: Every command is analyzed for dangerous patterns (e.g., recursive deletes, system modifications) before execution.
 - **Privacy Scrubbing**: AI prompts are optionally scrubbed for sensitive data like tokens and secrets before being sent to providers.
-- **Full Transparency**: AzoDesk never performs a destructive action without your explicit confirmation (unless you choose to enable `autoConfirm`).
 
 ---
 
 ## 🤝 Support the Developer
 
+<div align="center">
+
 > **"Development is a journey that thrives on community and passion. AzoDesk is my contribution to the global developer community—a tool that I built to be totally free and open for everyone. If AzoDesk has empowered your workflow, please consider supporting the project to help me keep it at the cutting edge."**
 
-Your support helps me maintain the infrastructure, integrate new models, and continue building the future of autonomous engineering.
+### 💰 Donation Channels
 
-### 💰 Crypto Donations
-- **Bitcoin (BTC)**: `bc1qr5tdgwpp0lfsug3fddjmqlsyp3jgmurcsu4lmk`
-- **Ethereum (ETH)**: `0xFaC4283cBbb72B1c7bab5aea03868e8b7f506c07`
-- **BNB (BEP20)**: `0xFaC4283cBbb72B1c7bab5aea03868e8b7f506c07`
+| Platform | Details (Copyable) |
+| :--- | :--- |
+| ![Bitcoin](https://img.shields.io/badge/Bitcoin-FF9900?style=for-the-badge&logo=bitcoin&logoColor=white) | `bc1qr5tdgwpp0lfsug3fddjmqlsyp3jgmurcsu4lmk` |
+| ![Ethereum](https://img.shields.io/badge/Ethereum-3C3C3D?style=for-the-badge&logo=ethereum&logoColor=white) | `0xFaC4283cBbb72B1c7bab5aea03868e8b7f506c07` |
+| ![BNB](https://img.shields.io/badge/BNB-F3BA2F?style=for-the-badge&logo=binance&logoColor=black) | `0xFaC4283cBbb72B1c7bab5aea03868e8b7f506c07` |
+| ![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white) | [paypal.me/ahmad4572](https://paypal.me/ahmad4572) |
+| ![Payoneer](https://img.shields.io/badge/Payoneer-FF4800?style=for-the-badge&logo=payoneer&logoColor=white) | `ahmadabdullahchaudary@gmail.com` |
+| ![Binance](https://img.shields.io/badge/Binance_ID-F3BA2F?style=for-the-badge&logo=binance&logoColor=black) | `573493421` |
 
-### 💳 Digital Payments
-- **PayPal**: [paypal.me/ahmad4572](https://paypal.me/ahmad4572)
-- **Payoneer**: `ahmadabdullahchaudary@gmail.com`
-- **Binance ID**: `573493421`
+</div>
 
 ---
 
