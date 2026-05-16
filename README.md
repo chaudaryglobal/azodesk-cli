@@ -33,49 +33,84 @@ By integrating over **100+ state-of-the-art AI models** from providers like **Op
 
 ## 📺 Live Previews & Demos
 
+<div align="center">
+
 ### 🔧 1. Autonomous Self-Healing
-Watch AzoDesk detect a build error and fix it without human intervention.
+*AzoDesk detects, diagnoses, and fixes a broken build in real-time.*
 
 ```text
-❯ azodesk ai "build the project"
-⠋ Thinking...
-● Executing: npm run build
-✖ Error: Cannot find module '@types/node'
-⠋ Self-Healing Loop Triggered...
-🧠 Diagnosis: Missing TypeScript type definitions for Node.js.
-💡 Proposed Fix: npm install --save-dev @types/node
-✔ Applied fix successfully.
-● Re-executing: npm run build
-✔ Build Success!
+╭──────────────────────────────────────────────────────────────────╮
+│ 🟢 🟡 🔴  azodesk — bash — 80×24                                  │
+├──────────────────────────────────────────────────────────────────┤
+│                                                                  │
+│  ❯ azodesk ai "build the project"                                │
+│  ⠋ Thinking...                                                   │
+│  ● Executing: npm run build                                      │
+│  ✖ Error: Cannot find module '@types/node'                       │
+│                                                                  │
+│  ⠋ Self-Healing Loop Triggered...                                │
+│  🧠 Diagnosis: Missing TypeScript type definitions for Node.js.  │
+│  💡 Proposed Fix: npm install --save-dev @types/node             │
+│  ✔ Applied fix successfully.                                     │
+│                                                                  │
+│  ● Re-executing: npm run build                                   │
+│  ✔ Build Success!                                                │
+│                                                                  │
+│ ──────────────────────────────────────────────────────────────── │
+│  AzoDesk ❯  👤 DEBUGGER  🤖 DEEPSEEK  📁 workspace  🛡️  🔒       │
+╰──────────────────────────────────────────────────────────────────╯
 ```
+
+<br>
 
 ### ⚡ 2. Speculative Context Loading
-RAG at the speed of thought. Files are loaded *before* you finish your prompt.
+*Experience RAG that works ahead of you, pre-loading files as you type.*
 
 ```text
-❯ azodesk chat
-AzoDesk ❯ How does the auth log...
-[ Warm Context Buffer ]
-📂 Loaded: src/auth/service.ts (98% match)
-📂 Loaded: src/auth/types.ts (92% match)
-📂 Loaded: src/config/auth.config.ts (85% match)
-...Ready to answer instantly.
+╭──────────────────────────────────────────────────────────────────╮
+│ 🟢 🟡 🔴  azodesk — bash — 80×24                                  │
+├──────────────────────────────────────────────────────────────────┤
+│                                                                  │
+│  AzoDesk ❯ How does the auth log...                              │
+│                                                                  │
+│  [ Warm Context Buffer ]                                         │
+│  📂 Loaded: src/auth/service.ts (98% match)                      │
+│  📂 Loaded: src/auth/types.ts (92% match)                       │
+│  📂 Loaded: src/config/auth.config.ts (85% match)                │
+│                                                                  │
+│  ...Ready to answer instantly.                                   │
+│                                                                  │
+│ ──────────────────────────────────────────────────────────────── │
+│  AzoDesk ❯  👤 ARCHITECT  🤖 GPT-4O  📁 backend  🛡️  🔒          │
+╰──────────────────────────────────────────────────────────────────╯
 ```
+
+<br>
 
 ### ⌨️ 3. The Command Palette (`Ctrl + P`)
-A visual cockpit for the advanced engineer.
+*The ultimate engineering cockpit for model switching and configuration.*
 
 ```text
-  ⚡ AZODESK COMMAND PALETTE    ↑↓ Navigate  Enter Select  Esc Close
-
-  ▶ 🚀 Autonomous Task Solver (/solve)
-    🧠 Specialized Skills (Search & Browse)
-    🤖 AI Models (Search & Switch)
-    👤 Change Mode
-    📂 Index Workspace (RAG)
-    🔑 Configure API Keys
-    🛡️  Security & Sandbox Settings
+╭──────────────────────────────────────────────────────────────────╮
+│ 🟢 🟡 🔴  azodesk — bash — 80×24                                  │
+├──────────────────────────────────────────────────────────────────┤
+│                                                                  │
+│  ⚡ AZODESK COMMAND PALETTE    ↑↓ Navigate  Enter Select  Esc    │
+│                                                                  │
+│  ▶ 🚀 Autonomous Task Solver (/solve)                            │
+│    🧠 Specialized Skills (Search & Browse)                       │
+│    🤖 AI Models (Search & Switch)                                │
+│    👤 Change Mode                                                │
+│    📂 Index Workspace (RAG)                                      │
+│    🔑 Configure API Keys                                         │
+│    🛡️  Security & Sandbox Settings                               │
+│                                                                  │
+│ ──────────────────────────────────────────────────────────────── │
+│  AzoDesk ❯  👤 DEFAULT  🤖 AUTO  📁 project-root  🛡️  🔒         │
+╰──────────────────────────────────────────────────────────────────╯
 ```
+
+</div>
 
 ---
 
