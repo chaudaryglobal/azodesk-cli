@@ -235,7 +235,7 @@ AzoDesk is designed for professional environments where security is non-negotiab
 
 > **"Development is a journey that thrives on community and passion. AzoDesk is my contribution to the global developer community—a tool that I built to be totally free and open for everyone. If AzoDesk has empowered your workflow, please consider supporting the project to help me keep it at the cutting edge."**
 
-### 💰 Donation Channels
+### 💰 Support Channels
 
 | Platform | Details (Copyable) |
 | :--- | :--- |
